@@ -1,0 +1,800 @@
+@charset "utf-8";
+/* CSS Document */
+/*********************************************** general***************************/
+body{
+	margin:0px;
+	padding:0px;
+	font-family: 'Mukta', sans-serif;	
+}
+header{
+	margin-top:0px;
+	width:100%;
+	height:50px;
+	position:fixed;
+	z-index:3;
+	font-family: 'Raleway', sans-serif;
+	
+	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 33%, rgba(14,32,153,1) 33%, rgba(8,19,148,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(33%, rgba(255,255,255,1)), color-stop(33%, rgba(255,255,255,1)), color-stop(33%, rgba(14,32,153,1)), color-stop(100%, rgba(8,19,148,1)));
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 33%, rgba(14,32,153,1) 33%, rgba(8,19,148,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 33%, rgba(14,32,153,1) 33%, rgba(8,19,148,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 33%, rgba(14,32,153,1) 33%, rgba(8,19,148,1) 100%);
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 33%, rgba(14,32,153,1) 33%, rgba(8,19,148,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#081394', GradientType=1 );
+
+	} .logoprincipal{
+		margin-top:-25px;
+		width:25%;
+		height:100px;
+	}
+	   header label{
+			width:30px;
+		height:30px;
+		padding:10px;
+		   display:block;
+		   margin-top:-75px;
+		margin-left:85%;
+	   } .menu{
+		   position:absolute;
+		   background-color:#333;
+		   width:70%;
+		   margin-left:100%;
+		   transition:all 0.5s;
+	   } .menu ul{
+		   margin:0;
+			list-style:none;
+			padding:0;
+			justify-content: flex-end;
+		   flex-direction: column;
+	   } .menu li{
+		   border-top:1px solid #FFF;
+	   } .menu li a{
+			display:block;
+			padding: 15px 20px;
+			color:#FFF;
+			text-decoration:none;
+		}.menu li:hover{
+			background-color:rgba(255,102,0,1);
+		}
+	    #icono{
+	 width:100%;
+	  margin-left:70%;
+		 display:block;
+ } #icono:hover{
+	 display:block;
+	 cursor:pointer;
+	 background-color:#FFF;
+	 border-radius:100%;
+	 } 
+	 #btn-menu{
+		 display:none;
+	 }
+	 #btn-menu:checked ~ .menu{
+		 margin-left:30%;
+		 }
+	 
+	  .slider{
+	 margin:auto;
+	 margin-top:-20px;
+	 width:100%;
+	 height:300px;
+	 overflow:hidden;
+ } .slider ul{
+	 padding:0;
+	 display:flex;
+	 width:400%;
+	 animation: cambio 20s infinite;
+	 animation-direction:alternate;
+	 animation-timing-function:ease-out;
+ } .slider li{
+	 width:100%;
+	 list-style:none;
+ } .slider img{
+	 width:100%;
+	 height:300px;
+ }
+ 
+ @keyframes cambio{
+	 0%{margin-left:0;}
+	 20%{margin-left:0;}
+	 
+	 25%{margin-left:-100%;}
+	 45%{margin-left:-100%;}
+	 
+	 50%{margin-left:-200%;}
+	 70%{margin-left:-200%;}
+	 
+	 75%{margin-left:-300%;}
+	 100%{margin-left:-300%;}
+	 
+	 }
+ 
+		 
+	
+	
+	
+	
+	 section{
+		width:100%;
+		height:auto;
+		background-color:#FFF;
+		margin-top:0px;
+	}
+	aside{
+		width:100%;
+		height:auto;
+		margin-top:50px;
+	}  #redes{
+		width:100%;
+		height:auto;
+		display:inline-block;
+		text-align:center;
+	} #facebook{
+		width:8%;
+		height:40px;
+		margin-left:10px;
+	} #instagram{
+		width:8%;
+		height:40px;
+		margin-left:30px;
+	} #youtube{
+		width:8%;
+		height:40px;
+		margin-left:30px;
+	} #whatsap{
+		width:8%;
+		height:40px;
+		margin-left:30px;
+	}footer{
+		width:100%;
+		height:auto;
+		padding-top:5px;
+	
+	background: rgba(13,8,163,1);
+background: -moz-linear-gradient(45deg, rgba(13,8,163,1) 1%, rgba(10,30,112,1) 1%, rgba(6,14,161,1) 36%, rgba(15,28,214,1) 60%, rgba(15,28,214,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(1%, rgba(13,8,163,1)), color-stop(1%, rgba(10,30,112,1)), color-stop(36%, rgba(6,14,161,1)), color-stop(60%, rgba(15,28,214,1)), color-stop(100%, rgba(15,28,214,1)));
+background: -webkit-linear-gradient(45deg, rgba(13,8,163,1) 1%, rgba(10,30,112,1) 1%, rgba(6,14,161,1) 36%, rgba(15,28,214,1) 60%, rgba(15,28,214,1) 100%);
+background: -o-linear-gradient(45deg, rgba(13,8,163,1) 1%, rgba(10,30,112,1) 1%, rgba(6,14,161,1) 36%, rgba(15,28,214,1) 60%, rgba(15,28,214,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(13,8,163,1) 1%, rgba(10,30,112,1) 1%, rgba(6,14,161,1) 36%, rgba(15,28,214,1) 60%, rgba(15,28,214,1) 100%);
+background: linear-gradient(45deg, rgba(13,8,163,1) 1%, rgba(10,30,112,1) 1%, rgba(6,14,161,1) 36%, rgba(15,28,214,1) 60%, rgba(15,28,214,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d08a3', endColorstr='#0f1cd6', GradientType=1 );
+
+	} #menufooter{
+		width:20%;
+		height:auto;
+		margin-left:30px;
+		
+	} #menufooter{
+		text-decoration:none;
+	}
+	#menufooter a{
+		text-decoration:none;
+		padding:0px 0px;
+		display:block;
+		font-size:15px;
+		color:#FFF;
+	}  #menufooter a:hover{
+      color:#F60;
+	}  #contlogo{
+		width:30%;
+		height:100px;
+		text-align:center;
+		color:#FFF;
+		position:absolute;
+      margin-left:40%;
+	  margin-top:-120px;
+	  padding-top:-50px;
+		}
+	#logofooter{
+		width:100%;
+		margin-top:5px;
+		height:100px;
+		} 
+		
+	/****************************************************************/
+	
+	/************************************ seccion inicio ***********************/
+	h1{
+		text-align:center;
+		font-size:20px;
+		color:#F60;
+	}
+	#planteles{
+		text-align:center;
+		}
+	#plantel1{
+		margin-top:20px;
+		margin-left:10px;
+		width:150px;
+		height:153px;
+		display:inline-block;
+		background-image:url(../img/GTU.jpg);
+		background-position:center center;
+		background-size:100%;
+	} #plantel1:hover{
+			width:150px;
+		height:153px;
+			display:inline-block;
+		background-image:url(../img/WhatsApp%20Image%202019-10-03%20at%202.08.26%20PM.jpeg);
+		background-position:center center;
+    	background-size:100%;
+		transition:2s;
+		
+	}  #plantel2{
+		margin-top:20px;
+		margin-left:10px;
+		width:150px;
+		height:153px;
+		display:inline-block;
+		background-image:url(../img/planEcatepec.jpg);
+		background-position:center center;
+		background-size:100%;
+	} #plantel2:hover{
+		width:150px;
+		height:153px;
+			display:inline-block;
+		background-image:url(../img/WhatsApp%20Image%202019-10-03%20at%202.08.29%20PM.jpeg);
+		background-position:center center;
+		background-size:100%;
+		transition:2s;
+		
+	} #plantel3{
+		margin-top:20px;
+		margin-left:10px;
+		width:150px;
+		height:153px;
+		display:inline-block;
+		background-image:url(../img/plantelAguas.jpg);
+		background-position:center center;
+		background-size:100%;
+	} #plantel3:hover{
+			width:150px;
+		height:153px;
+			display:inline-block;
+		background-image:url(../img/WhatsApp%20Image%202019-10-03%20at%202.08.27%20PM.jpeg);
+		background-position:center center;
+		background-size:100%;
+		transition:2s;
+	} #plantel4{
+		margin-top:20px;
+		margin-left:10px;
+		width:150px;
+		height:153px;
+		display:inline-block;
+		background-image:url(../img/plantelAtiz.jpg);
+		background-position:center center;
+		background-size:100%;
+	} #plantel4:hover{
+			width:150px;
+		height:153px;
+			display:inline-block;
+		background-image:url(../img/WhatsApp%20Image%202019-10-03%20at%202.08.28%20PM.jpeg);
+		background-position:center center;
+		background-size:100%;
+		transition:2s;
+		
+	} #plantel5{
+		margin-top:20px;
+		margin-left:10px;
+			width:150px;
+		height:153px;
+		display:inline-block;
+		background-image:url(../img/planNau.jpg);
+		background-position:center center;
+		background-size:100%;
+	} #plantel5:hover{
+			width:150px;
+		height:153px;
+			display:inline-block;
+		background-image:url(../img/WhatsApp%20Image%202019-10-03%20at%202.08.36%20PM.jpeg);
+		background-position:center center;
+		background-size:100%;
+		transition:2s;
+		
+	} #plantel6{
+		margin-top:20px;
+		margin-left:10px;
+			width:150px;
+		height:153px;
+		display:inline-block;
+		background-image:url(../img/planPlayacar.jpg);
+		background-position:center center;
+		background-size:100%;
+	} #plantel6:hover{
+			width:150px;
+		height:153px;
+			display:inline-block;
+		background-image:url(../img/WhatsApp%20Image2019-10-03%20at%202.08.36%20PM.jpeg);
+		background-position:center center;
+		background-size:100%;
+		transition:2s;	
+	} #ubicacion{
+		text-align:center;
+		font-size:20px;
+		color:#F60;
+	}
+#mapa{
+		width:80%;
+		height:250px;
+		margin-left:10%;
+		margin-top:10px;
+	} 
+
+	
+	/*************************************************/
+	
+	/*********************************** seccion acerca de ****************************************/
+    #contacercade{
+		width:100%;
+		height:auto;
+	} 
+	.mision{
+		font-size:20px;
+		color:#F60;
+		margin-left:5%;
+	} .vision{
+		font-size:20px;
+		color:#F60;
+		margin-left:5%;
+	} .valores{
+		font-size:20px;
+		color:#00F;
+		margin-left:5%;
+	} .respeto{
+		font-size:20px;
+	}  .obediencia{
+		font-size:20px;
+	} .responsabilidad{
+		font-size:20px;
+	} .puntualidad{
+		font-size:20px;
+	}
+	.contmision{
+	 width:80%;
+	 height:auto;
+	 margin-left:40px;
+	 text-align:center;
+	 text-align:justify;
+	 opacity:1;
+	 	text-align:center;
+		text-align:justify;
+	 background-color:#F90;
+	 	transition:2s;
+	 	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+	} 
+	 .contmision p{
+		width:80%;
+		margin-left:10%;
+		padding-top:10px;
+		font-size:15px;
+		color:#FFF;
+	}
+	
+	
+	 .contvision{
+	 width:80%;
+	 height:auto;
+	 transition:2s;
+	 margin-left:40px;
+	 opacity:1;
+	 	text-align:center;
+		text-align:justify;
+		 background-color:#F90;
+	 	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+	} 
+	
+	.contvision p{
+		width:80%;
+		margin-left:10%;
+		padding-top:10px;
+		font-size:15px;
+		color:#FFF;
+	}
+	
+	.contrespeto{
+	 width:80%;
+	 height:auto;
+	 transition:2s;
+	 opacity:1;
+	 margin-left:40px;
+	 	text-align:center;
+		text-align:justify;
+		 background-color:#03C;
+	 	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+	} 
+	.contrespeto p{
+		width:80%;
+		margin-left:10%;
+		padding-top:10px;
+		font-size:15px;
+		color:#FFF;
+	}
+	
+	 .contobediencia{
+	 width:80%;
+	 height:auto;
+	 transition:2s;
+	 opacity:1;
+	 margin-left:40px;
+	 	text-align:center;
+		text-align:justify;
+		 background-color:#03C;
+	 	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+	} 
+	 .contobediencia p{
+		width:80%;
+		margin-left:10%;
+		padding-top:10px;
+		font-size:15px;
+		color:#FFF;
+	}
+	
+	.contresponsabilidad{
+	 width:80%;
+	 height:auto;
+	 transition:2s;
+	 opacity:1;
+	 margin-left:40px;
+	 	text-align:center;
+		text-align:justify;
+		 background-color:#03C;
+	 	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+	}.contresponsabilidad p{
+		width:80%;
+		margin-left:10%;
+		padding-top:10px;
+		font-size:15px;
+		color:#FFF;
+	}
+	
+	 .contpuntualidad{
+	 width:80%;
+	 height:auto;
+	 transition:2s;
+	 opacity:1;
+	 margin-left:40px;
+	 	text-align:center;
+		text-align:justify;
+		 background-color:#03C;
+	 	-webkit-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 7px 0px rgba(0,0,0,0.75);
+	} 
+	.contpuntualidad p{
+		width:80%;
+		margin-left:10%;
+		padding-top:10px;
+		font-size:15px;
+		color:#FFF;
+	}
+	
+	/*************************seccion campus**********************/
+	.bannercampus{
+		width:100%;
+		height:300px;
+		background-image:url(../img/slide6.jpg);
+		background-attachment:scroll;
+		background-position:center center;
+		background-size:100%;
+	} #conocenos{
+		font-size:20px;
+		color:#FFF;
+		background-color:#F60;
+	}   
+	 #contplantelesbanner{
+		text-align:center;
+		width:100%;
+		height:200px;
+		opacity:1;
+		transition:3s;
+		
+	} #plantelban1{
+		width:15%;
+		height:80px;
+		transition:1s;
+	} #plantelban1:hover{
+		width:15%;
+		height:90px;
+		transition:1s;
+	}
+	 #plantelban2{
+		width:15%;
+			margin-left:10px;
+		height:80px;
+		transition:1s;
+	} #plantelban2:hover{
+		width:15%;
+		height:90px;
+		transition:1s;
+	}
+	
+	 #plantelban3{
+		width:15%;
+			margin-left:10px;
+		height:80px;
+		transition:1s;
+	}#plantelban3:hover{
+		width:15%;
+		height:90px;
+		transition:1s;
+	}
+	 #plantelban4{
+		width:15%;
+			margin-left:10px;
+		height:80px;
+		transition:1s;
+	}#plantelban4:hover{
+		width:15%;
+		height:90px;
+		transition:1s;
+	}
+	 #plantelban5{
+		width:15%;
+			margin-left:10px;
+		height:80px;
+		transition:1s;
+	}#plantelban5:hover{
+		width:15%;
+		height:90px;
+		transition:1s;
+	}
+	   #textobanner{
+		text-align:center;
+		height:auto;
+		margin-top:-110px;
+		background-color:rgba(0,0,0,0.5);
+		font-size:20px;
+		color:#FFF;
+	} 
+	
+	#campus{
+		text-align:center;
+		} #concamp1{
+			width:100%;
+			height:auto;
+			}
+	#campus1{
+		margin-top:20px;
+			margin-left:4%;
+		width:90%;
+		height:330px;
+		background-image:url(../img/planEcatepec.jpg);
+		background-position:center center;
+		background-size:100%;
+		transition:1s;
+	} 
+	 #parrafo1{
+		width:90%;
+		height:auto;
+		text-align:center;
+		text-align:justify;
+		margin-top:10px;
+		margin-left:7%;
+			color:#FFF;
+		background-color:rgba(0,0,0,1);
+		transition:3s;
+		} 
+	#campus #concamp1 #parrafo1 p{
+		margin-left:10%;
+		width:80%;
+		font-size:10px;
+	}
+	
+	 #concamp2{
+			width:100%;
+			height:auto;
+			}
+	#campus2{
+		margin-top:20px;
+			margin-left:4%;
+		width:90%;
+		height:330px;
+		background-image:url(../img/planEcatepec.jpg);
+		background-position:center center;
+		background-size:100%;
+		transition:1s;
+	} 
+	 #parrafo2{
+		width:90%;
+		height:auto;
+		text-align:center;
+		text-align:justify;
+		margin-top:10px;
+		margin-left:7%;
+			color:#FFF;
+		background-color:rgba(0,0,0,1);
+		transition:3s;
+		} 
+	#campus #concamp2 #parrafo2 p{
+		margin-left:10%;
+		width:80%;
+		font-size:10px;
+	}
+	
+	 #concamp3{
+			width:100%;
+			height:auto;
+			}
+	#campus3{
+		margin-top:20px;
+			margin-left:4%;
+		width:90%;
+		height:330px;
+		background-image:url(../img/planEcatepec.jpg);
+		background-position:center center;
+		background-size:100%;
+		transition:1s;
+	} 
+	 #parrafo3{
+		width:90%;
+		height:auto;
+		text-align:center;
+		text-align:justify;
+		margin-top:10px;
+		margin-left:7%;
+			color:#FFF;
+		background-color:rgba(0,0,0,1);
+		transition:3s;
+		} 
+	#campus #concamp3 #parrafo3 p{
+		margin-left:10%;
+		width:80%;
+		font-size:10px;
+	}
+	
+	 #concamp4{
+			width:100%;
+			height:auto;
+			}
+	#campus4{
+		margin-top:20px;
+			margin-left:4%;
+		width:90%;
+		height:330px;
+		background-image:url(../img/planEcatepec.jpg);
+		background-position:center center;
+		background-size:100%;
+		transition:1s;
+	} 
+	 #parrafo4{
+		width:90%;
+		height:auto;
+		text-align:center;
+		text-align:justify;
+		margin-top:10px;
+		margin-left:7%;
+			color:#FFF;
+		background-color:rgba(0,0,0,1);
+		transition:3s;
+		} 
+	#campus #concamp4 #parrafo4 p{
+		margin-left:10%;
+		width:80%;
+		font-size:10px;
+	}
+	
+	 #concamp5{
+			width:100%;
+			height:auto;
+			}
+	#campus5{
+		margin-top:20px;
+			margin-left:4%;
+		width:90%;
+		height:330px;
+		background-image:url(../img/planEcatepec.jpg);
+		background-position:center center;
+		background-size:100%;
+		transition:1s;
+	} 
+	 #parrafo5{
+		width:90%;
+		height:auto;
+		text-align:center;
+		text-align:justify;
+		margin-top:10px;
+		margin-left:7%;
+			color:#FFF;
+		background-color:rgba(0,0,0,1);
+		transition:3s;
+		} 
+	#campus #concamp5 #parrafo5 p{
+		margin-left:10%;
+		width:80%;
+		font-size:10px;
+	}
+	
+	
+	
+	
+	
+/******************************* seccion contacto *********************/
+
+
+#form{
+	margin:auto;
+	border-radius:5px;
+	margin-top:20px;
+		text-align:center;
+	width:80%;
+	height:auto;
+	  background-color:#333;
+	color:#FFF;
+} #nombre{
+	margin-left:8%;
+	margin-top:10px;
+	height:25px;
+	width:50%;
+	} #nombre:hover{
+	border-color:#F60;
+	}
+#carrera{
+		margin-left:9%;
+	margin-top:10px;
+	height:25px;
+	width:50%;
+	}  #carrera:hover{
+	border-color:#F60;
+	}
+#correo{
+		margin-left:10%;
+	margin-top:10px;
+	height:25px;
+	width:50%;
+	}  #correo:hover{
+	border-color:#F60;
+	}
+#telefono{
+			margin-left:6%;
+	margin-top:10px;
+	height:25px;
+	width:50%;
+	}  #telefono:hover{
+	border-color:#F60;
+	}
+#boton{
+	border-radius:10px;
+	width:60%;
+	height:50px;
+		margin:10px;
+		margin-top:-5px;
+		background-color:#F60;
+		border-color:#F60;
+		color:#FFF;
+	} #boton:hover{
+		background-color:#FFF;
+		border-color:#FFF;
+		color:#F60;
+	}
+
+		
+
+#mapacont{
+	width: 100%;
+	height: 250px;
+    margin-top:20px;
+}
+
+
+
+/***********************Proximamente*****************/
+
+#proxplantelesimagen{
+	width:100%;
+	height:250px;
+}

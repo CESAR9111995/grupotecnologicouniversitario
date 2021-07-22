@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Grupo Tecnológico Universitario</title>
+<link rel="icon" href="img/iconogrupo.png" />
+<!-- TemplateEndEditable -->
+<!-- adaptar a cualquier pantalla -->
+<meta name="viewport" content="width= device-width initial-scale=1.0, user-scalable=no"/>
+<!-- smartphone -->
+<link rel="stylesheet" href="../css/celular.css" type="text/css" media="only screen and (min-width:240px) and (max-width:667px)" />
+<!-- Tablet -->
+<link rel="stylesheet" href="../css/tablet.css" type="text/css" media="only screen and (min-width:668px) and (max-width:1080px)" />
+<!-- escritorio -->
+<link rel="stylesheet" href="../css/escritorio_inicio.css" type="text/css" media="only screen and (min-width:1081px)" />
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<header>
+<img class="logoprincipal" src="img/logogrupo.png" />
+<input type="checkbox" id="btn-menu" />
+<label for="btn-menu"><img id="icono" src="../img/iconomenu.png" /></label>
+<nav class="menu">
+<ul>
+<li><a href="../inicio.html">Inicio</a></li>
+<li><a href="../acerca.html">Acerca de</a></li>
+<li><a href="../campus.html">Campus</a></li>
+<li><a href="../contacto.html">Contáctanos</a></li>
+<li><a href="../proximamente.html" onclick="alerta()">Próximamente</a></li>
+</ul>
+</nav>
+</header>
+<section><!-- TemplateBeginEditable name="editame" -->
+<h1>Nuestros Planteles</h1>
+ <div id="planteles">
+<a href="#"><div id="plantel1">
+</div></a>
+
+<a href="#"><div id="plantel2">
+</div></a>
+
+<a href="#"><div id="plantel3">
+</div></a>
+
+<a href="#"><div id="plantel4">
+</div></a>
+
+<a href="#"><div id="plantel5">
+</div></a>
+
+<a href="#"><div id="plantel6">
+</div></a>
+</div>
+	<h2 id="ubicacion">Ubícanos</h2>
+    <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1h97WpdQ7fmHlC3us1gyZECVOS6u1I4L6"></iframe>
+        </div>
+
+<!-- TemplateEndEditable --></section>
+
+<aside>
+<div id="redes">
+<a href="#"><img id="facebook" src="../img/face.png" /></a>
+<a href="https://www.instagram.com/explore/tags/grupotecnol%C3%B3gicouniversitario/"><img id="instagram" src="../img/instagram.png" /></a>
+<a href="#"><img id="youtube" src="../img/youtube.png" /></a>
+<img id="whatsap" src="../img/whats.png" />
+</div>
+</aside>
+
+<footer>
+<div id="menufooter">
+<a id="enlace1" href="inicio.html">Inicio</a>
+<a id="enlace2" href="acerca.html">Acerca de</a>
+<a id="enlace3" href="campus.html">Campus</a>
+<a id="enlace4" href="contacto.html">Contacto</a>
+<a id="enlace5" href="proximamente.html" onclick="alerta()">Próximamente</a>
+</div>
+
+<div id="contlogo">
+<img id="logofooter" src="../img/logogrupo.png" />
+</div>
+</footer>
+
+
+</body>
+</html>
